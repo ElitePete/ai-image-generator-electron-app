@@ -25,12 +25,14 @@ app.whenReady().then(() => {
   })
 })
 
+
+//Logic for generating image based on input value from user
 ipcMain.on('generate-image', async (e, request) => {
-  //TODO add DALL E logic
+ 
   
 
     const openai = new OpenAI({
-      apiKey: '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', // defaults to process.env["OPENAI_API_KEY"]
+      apiKey: '', // defaults to process.env["OPENAI_API_KEY"] - Will Update
     })
         
     
